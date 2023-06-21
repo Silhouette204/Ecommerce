@@ -1,0 +1,195 @@
+:root {
+  --red: #ca0d0d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto;
+  color: #010101;
+  cursor: pointer;
+}
+
+.header .logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.header ul {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  display: flex;
+  list-style: none;
+  gap: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+/* end of header or navigation bar*/
+
+.header li a i {
+  font-size: 22px;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #0f0f0f;
+  position: relative;
+  transition: all ease-in-out 180ms;
+}
+
+.header li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.2em;
+  width: 0%;
+  background-color: var(--red);
+  transition: all ease-in-out 180ms;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+.header li a:hover {
+  color: var(--red);
+}
+
+.header li:first-child {
+  margin-left: 3em;
+}
+.image {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  transition: 1s ease;
+}
+/* for background images*/
+
+.image .blur-side {
+  width: 25%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* going to blur*/
+
+.front-title {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 105px;
+}
+
+.front-title p {
+  font-size: 47px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 50px;
+  color: #4a4a4a;
+}
+
+.front-title .brand-text {
+  padding-top: 18px;
+  font-size: 85px;
+  letter-spacing: 1px;
+}
+
+.front-title .description {
+  width: 55%;
+  padding-top: 1.6rem;
+  font-weight: 600;
+  color: #010101;
+  letter-spacing: 1px;
+  padding-bottom: 2rem;
+}
+/* end of text and description*/
+
+.front-title .Clickformore button {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: none;
+  color: #4a4a4a;
+  padding: 12px 50px;
+  letter-spacing: 1.5px;
+  list-style-type: none;
+  font-weight: 700;
+  border-radius: 50px;
+}
+/* end of button with blur*/
+
+button li a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+button li a:hover::after {
+  width: 100%;
+}
+
+button li a:hover {
+  transition: all ease-in-out 70ms;
+  color: var(--red);
+  border-radius: 50px;
+  margin: 100px 10px;
+}
+
+.shoe-list {
+  bottom: 66px;
+  position: absolute;
+  left: 370px;
+}
+
+.shoe-list ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  width: 65vw;
+}
+
+.shoe-list .thumbnail {
+  display: flex;
+  height: 10rem;
+  width: 15rem;
+  background-size: cover !important;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.shoe-list .thumbnail .details {
+  margin-top: auto;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.shoe-list .active {
+  margin-top: -2rem;
+}
